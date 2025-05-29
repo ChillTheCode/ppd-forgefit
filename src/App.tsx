@@ -4,7 +4,7 @@ import Login from "./views/authentication/Login";
 import Register from "./views/authentication/Register";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import HomeTest from "./views/HomeTest";
+import GymLanding from "./views/HomeTest";
 import UnderstockedItems from "./views/tabel_rekomendasi/UnderstockedItems";
 import StokRekomendasi from "./views/tabel_rekomendasi/StokRekomendasi";
 import Profile from "./views/authentication/Profile";
@@ -78,7 +78,7 @@ function App() {
         }
       >
         <Route path="/help" element={<Help />} />
-        <Route path="/" element={<HomeTest />} />
+        <Route path="/" element={<GymLanding />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/edit-profile" element={<EditProfile />} />
         <Route path="/reset-password" element={<ForgotPassword />} />
