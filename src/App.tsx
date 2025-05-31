@@ -2,6 +2,7 @@ import { Routes, Route, Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import GymLanding from "./views/HomeTest";
+import ForgeFitWelcome from "./views/Login";
 
 
 
@@ -25,6 +26,8 @@ function App() {
       >
         {/* Only the GymLanding route is kept, rendering at the root path "/" */}
         <Route path="/" element={<GymLanding />} />
+
+        <Route path="/login" element={<ForgeFitWelcome />} />
       </Route>
     </Routes>
   );
