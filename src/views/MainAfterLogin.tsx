@@ -341,7 +341,7 @@ const ForgeFitMainDashboard: React.FC = () => {
               <ForgeFitLogo size={20} className="text-blue-400" />
               <Dumbbell className="text-blue-400 hidden" size={20} />
               <span className="text-sm text-gray-400">
-                © 2025 ForgeFit. Forge your strength, forge your future.
+                © 2025 ForgeFit. Your AI Personal Trainer for smarter, safer, and more exciting workouts.
               </span>
             </div>
             <button
