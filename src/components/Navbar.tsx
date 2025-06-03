@@ -114,15 +114,13 @@ const Navbar: React.FC = () => {
               className="flex items-center cursor-pointer group" 
               onClick={() => handleNavigation(isDashboard ? "/dashboard" : "/")}
             >
-              <div className="flex items-center"> {/* Wrapper to control image size relative to navbar height */}
-                <img 
-                  src="/FORGEFIT_CLEAN.png" // Assuming this is your logo
-                  alt="ForgeFit Logo" 
-                  className={`object-contain group-hover:scale-110 transition-transform duration-300 ${
-                      isScrolled ? 'h-10 w-auto' : 'h-12 w-auto'
-                  }`}
-                />
-              </div>
+              <img 
+                src="/FORGEFIT_CLEAN.png" // Assuming this is your logo
+                alt="ForgeFit Logo" 
+                className={`object-contain group-hover:scale-110 transition-transform duration-300 ${
+                    isScrolled ? 'h-16 w-auto max-w-none' : 'h-20 w-auto max-w-none'
+                }`}
+              />
             </div>
 
             {/* Desktop Navigation */}
@@ -248,7 +246,7 @@ const Navbar: React.FC = () => {
                   <img 
                     src="/FORGEFIT_CLEAN.png" 
                     alt="ForgeFit Logo" 
-                    className="h-12 w-auto object-contain" // Mobile menu logo size
+                    className="h-20 w-auto object-contain max-w-none" // Mobile menu logo size increased and remove constraints
                   />
                 </div>
                 <button onClick={toggleMobileMenu} className="p-2 text-gray-400 hover:text-white">
